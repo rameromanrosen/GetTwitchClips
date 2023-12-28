@@ -27,7 +27,7 @@ scoop install twitch-cli
 
 ## 2.2. Twitch Developersへアプリの登録
 - [こちら](https://dev.twitch.tv/docs/authentication/register-app/)を参考にインストールしてください
-- ここで取得できる「Client ID」と「Client Secret」を、Twitch CLIの設定で使用します
+- ここで取得できる「Client ID」と「Client Secret」を、Twitch CLIの初期設定で使用します
 
 ## 2.3. Twitch CLIの初期設定
 - Powershellで以下コマンドを実行します
