@@ -27,7 +27,7 @@ scoop install twitch-cli
 
 ## 2.2. Twitch Developersへアプリの登録
 - [こちら](https://dev.twitch.tv/docs/authentication/register-app/)を参考にインストールしてください
-- ここで取得できる「Client ID」と「Client Secret」を、Twitch CLIの設定で使用します
+- ここで取得できる「Client ID」と「Client Secret」を、Twitch CLIの初期設定で使用します
 
 ## 2.3. Twitch CLIの初期設定
 - Powershellで以下コマンドを実行します
@@ -64,14 +64,14 @@ PS C:\Users\owner> twitch api get /users -q login=sunao_desuu
 PS C:\Users\owner>
 ```
 
-## GetTwitchClips.ps1のカスタマイズ（配信者IDの設定）
+## 2.5. GetTwitchClips.ps1のカスタマイズ（配信者IDの設定）
 - PS1フォルダ内の「GetTwitchClips.ps1」を編集します
 - 16行目の$global:broadcasterIdを、先ほど取得したIDに書き換えてください
 ```powershell
 $global:broadcasterId = "880929630"
 ```
 
-## GetTwitchClips.ps1のカスタマイズ（アウトプットファイルの設定）
+## 2.6. GetTwitchClips.ps1のカスタマイズ（アウトプットファイルの設定）
 - PS1フォルダ内の「GetTwitchClips.ps1」を編集します
 - アウトプットファイルは3つあるので、不要なものは削除してください
   - Googleスプレッドシート用tsvファイル（$global:outputcsv）
@@ -85,5 +85,5 @@ $global:broadcasterId = "880929630"
   - 保管用tsvファイル（$global:logfile）
     - Twitch CLIの結果を全量転記したものです
 
-# 実行方法
+# 3. 実行方法
 - GetTwitchClips.batを実行します
